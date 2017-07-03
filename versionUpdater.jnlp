@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Web Start Deployment Template -->
+<jnlp spec="1.0+"
+    codebase="http://ftp.aviv-pos.co.il/logbin"
+    href="versionUpdater.jnlp">
+
+<information>
+    <title>Logbin Version updater</title>
+    <vendor>http://www.aviv-pos.co.il</vendor>
+    <homepage href="http://www.aviv-pos.co.il"/>
+    <description>This service updates Logbin service automatically</description>
+    <description kind="short">
+      This service updates Logbin service automatically via Java Web start.
+    </description>
+    <offline-allowed/>
+</information>
+
+<security>
+    <all-permissions/>
+</security>
+
+<resources>
+    <j2se href="http://java.sun.com/products/autodl/j2se" onclick="javascript:mytracker(this.href);" version="1.5+"/>
+    <jar href="LogbinUpdater.jar"/>
+</resources>
+
+
+
+<application-desc main-class="updater.VersionUpdater"/>
+
+</jnlp>

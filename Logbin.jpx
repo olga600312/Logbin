@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+<property category="build" name="CopyExtensions.1" value="cmd"/>
+<property category="generalFormatting2" name="overrideBasicFormatting" value="1"/>
+<property category="javaFormatting" name="arrayInitDataOnNewLine" value="0"/>
+<property category="javaFormatting" name="packagePrefixGroups" value="java;javax;BLANK_LINE;java.awt;javax.swing;BLANK_LINE;org;(*)"/>
+<property category="javaFormatting" name="packageThreshold" value="0"/>
+<property category="javaFormatting" name="wrapAtColumn" value="600"/>
+<property category="javadoc" name="custom.tags.1" value="todo;a;To Do:"/>
+<property category="runtime" name="ConfigurationCount" value="1"/>
+<property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+<property category="runtime.0" name="ConfigurationName" value="Main"/>
+<property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+<property category="runtime.0" name="application.class" value="logbin.Main"/>
+<property category="runtime.0" name="application.parameters" value=".\script\backup.cmd"/>
+<property category="runtime.0" name="application.vmparameters" value=" -verbose:gc -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails -Xloggc:d:\jh.log  -XX:+HeapDumpOnOutOfMemoryError  -Xmx256m  -DROMINI=&quot;O:\olga\databrowse&quot; -Djava.library.path=o:\olga\databrowse\lib  -Djava.rmi.server.codebase=&quot;file:/o:\olga\databrowse\lib\clientStub.jar file:/o:\olga\databrowse\lib\boStub.jar file:/o:\olga\databrowse\lib\rmiStub.jar&quot; -Djava.security.policy=&quot;file:/o:\olga\databrowse\my.policy&quot;"/>
+<property category="runtime.1" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+<property category="runtime.1" name="ConfigurationName" value="Updater"/>
+<property category="runtime.1" name="RunnableType" value="com.borland.jbuilder.runtime.ApplicationRunner"/>
+<property category="runtime.1" name="application.class" value="updater.VersionUpdater"/>
+<property category="runtime.1" name="application.parameters" value="http://192.168.55.13/logbin/"/>
+<property category="serverservices" name="disabled.services" value="jdatastore"/>
+<property category="serverservices" name="single.server.name" value=""/>
+<property category="sys" name="AuthorLabel" value="@author"/>
+<property category="sys" name="BackupPath" value="bak"/>
+<property category="sys" name="CheckStable" value="1"/>
+<property category="sys" name="Company" value=""/>
+<property category="sys" name="CompanyLabel" value="Company:"/>
+<property category="sys" name="Copyright" value="Copyright (c) 2011"/>
+<property category="sys" name="CopyrightLabel" value="Copyright:"/>
+<property category="sys" name="DefaultPath" value="src"/>
+<property category="sys" name="Description" value=""/>
+<property category="sys" name="DescriptionLabel" value="Description:"/>
+<property category="sys" name="DocPath" value="doc"/>
+<property category="sys" name="ExcludeClassEnabled" value="0"/>
+<property category="sys" name="IncludeTestPath" value="1"/>
+<property category="sys" name="InstanceVisibility" value="2"/>
+<property category="sys" name="JDK" value="java version 1.6.0_17-b04"/>
+<property category="sys" name="JvmVersion" value="1.5"/>
+<property category="sys" name="LastTag" value="0"/>
+<property category="sys" name="Libraries" value="O%|/olga/developLib/SrLock.jar;O%|/olga/databrowse/lib/mysql-connector-java.jar"/>
+<property category="sys" name="MakeStable" value="0"/>
+<property category="sys" name="OutPath" value="classes"/>
+<property category="sys" name="SourcePath" value="src;test"/>
+<property category="sys" name="SourceVersion" value="1.5"/>
+<property category="sys" name="TestPath" value="test"/>
+<property category="sys" name="Title" value=""/>
+<property category="sys" name="TitleLabel" value="Title:"/>
+<property category="sys" name="Version" value="1.0"/>
+<property category="sys" name="VersionLabel" value="@version"/>
+<property category="sys" name="WorkingDirectory" value="."/>
+<node name="Archive" type="Archive">
+<property category="archiving" name="contentRules.1" value="I:logbin/*.*"/>
+<property category="archiving" name="contentRules.2" value="I:util/*.*"/>
+<property category="archiving" name="contentRules.3" value="I:ws/*.*"/>
+<property category="archiving" name="contentRules.4" value="I:updater/Utils.class"/>
+<property category="archiving" name="libraryStates.1" value="3:O%|/olga/developLib/SrLock.jar"/>
+<property category="archiving" name="libraryStates.2" value="3:O%|/olga/databrowse/lib/mysql-connector-java.jar"/>
+<property category="archiving" name="obfuscator" value="RetroGuard for J2ME"/>
+<property category="archiving" name="overrideManifestPath" value="src/META-INF/MANIFEST.MF"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="D%|/SETUPS/Logbin/Logbin.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<node name="LogbinUpdater" type="Archive">
+<property category="archiving" name="buildWithProject" value="0"/>
+<property category="archiving" name="contentRules.1" value="I:updater/*.*"/>
+<property category="archiving" name="contentRules.2" value="I:util/*.*"/>
+<property category="archiving" name="obfuscator" value="RetroGuard for J2ME"/>
+<property category="archiving" name="saveManifestPath" value="src/META-INF/MANIFEST_UPDATER.MF"/>
+<property category="archiving" name="targetCompressed" value="1"/>
+<property category="archiving" name="targetPath" value="D%|/SETUPS/Logbin/LogbinUpdater.jar"/>
+<property category="archiving" name="usingRules" value="1"/>
+</node>
+<file path="src/util/backup.cmd"/>
+<file path="src/META-INF/MANIFEST_UPDATER.MF"/>
+<file path="src/META-INF/MANIFEST.MF"/>
+</project>
